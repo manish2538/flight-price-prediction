@@ -1,6 +1,21 @@
+
+h1 {
+    /* color: rgb(255, 242, 242); */
+    color: white;
+}
+label {
+    color: rgb(253, 251, 250);
+    
+}
+h3 {
+     color: #e1f4f3;
+}
 body {
     background-color: #e1f4f3;
     text-align: center;
+    height: auto;
+    width: auto;
+    
 }
 
 .navbar {
@@ -14,3 +29,7 @@ a {
 a:hover {
     color: #f0f0f0;
   }
+
+ .white{
+     color:white;
+ } 
