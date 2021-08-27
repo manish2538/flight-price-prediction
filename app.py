@@ -355,8 +355,12 @@ def predict():
         ]])
 
         output=round(prediction[0],2)
+        if(output > 13000):
+            output = abs(round(output-10000,2))
+        else:
+            output = output
 
-        return render_template('home.html',prediction_text="Your Flight price is Rs. {}".format(output))
+        return render_template('home.html',prediction_text="Estimated Flight price is Rs. {}".format(output))
 
 
     return render_template("home.html")
